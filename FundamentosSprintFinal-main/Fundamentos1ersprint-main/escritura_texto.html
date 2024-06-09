@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escribir Texto</title>
+    <link rel="stylesheet" href="RegistroExitoso.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escribe lo que Desees</h1>
+        <textarea id="texto" rows="5"></textarea>
+        <button onclick="guardarTexto()" class="btn">Guardar Texto</button>
+
+        <hr>
+
+        <h2>Buscar Texto</h2>
+        <input type="text" id="busquedaTexto" placeholder="Buscar texto...">
+        <button onclick="buscarTexto()" class="btn">Buscar</button>
+
+        <hr>
+
+        <h3>Leer Archivo .txt</h3>
+        <input type="file" id="archivoTxt" accept=".txt">
+        <button onclick="leerArchivo()" class="btn">Leer Archivo</button>
+        <div id="resultadoArchivo"></div>
+
+        <hr>
+
+        <h4>Verificar Palíndromo</h4>
+        <input type="text" id="palabraPalindrome" placeholder="Ingresa una palabra...">
+        <button onclick="verificarPalindromo()" class="btn">Verificar</button>
+        <div id="resultadoPalindromo"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
