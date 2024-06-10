@@ -17,6 +17,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: FundamentosSprintFinal-main
-
+          BRANCH: main  # Rama desde la que se desplegará
+          FOLDER: FundamentosSprintFinal-main/Fundamentos1ersprint-main   # Carpeta que contiene los archivos a desplegar
